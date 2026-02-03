@@ -17,6 +17,9 @@ def about():
 @app.route('/total')
 def total():
     return render_template('index.html')
+@app.route('/data')
+def data():
+    return 'this is the data page'
 
 if __name__=="__main__":
     app.run(debug=True)
